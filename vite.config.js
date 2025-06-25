@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 import path from "path";
 import fs from "fs";
+import tailwindcss from '@tailwindcss/vite';
 
 // findAllHtmlFiles 함수 정의 추가
 function findAllHtmlFiles(directory) {
@@ -28,6 +29,9 @@ function findAllHtmlFiles(directory) {
 }
 
 export default defineConfig({
+  plugins: [
+    tailwindcss(),
+  ],
   build: {
     rollupOptions: {
       input: {
