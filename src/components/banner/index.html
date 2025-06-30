@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>carousel-component</title>
+    <link rel="icon" href="/vite.svg" />
+    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <a href="/">
+      <picture>
+        <!-- PC용 AVIF -->
+        <source type="image/avif" srcset="/src/assets/images/banner/pc-banner.avif 1x, /src/assets/images/banner/pc-banner@2x.avif 2x" media="(min-width: 768px)" />
+        <!-- PC용 Webp -->
+        <source type="image/webp" srcset="/src/assets/images/banner/pc-banner.webp 1x, /src/assets/images/banner/pc-banner@2x.webp 2x" media="(min-width: 768px)" />
+        <!-- PC용 JPG -->
+        <source type="image/jpeg" srcset="/src/assets/images/banner/pc-banner.jpg 1x, /src/assets/images/banner/pc-banner@2x.jpg 2x" media="(min-width: 768px)" />
+        <!-- 모바일용 AVIF -->
+        <source type="image/avif" srcset="/src/assets/images/banner/mo-banner.avif 1x, /src/assets/images/banner/mo-banner@2x.avif 2x" />
+        <!-- 모바일용 Webp -->
+        <source type="image/webp" srcset="/src/assets/images/banner/mo-banner.webp 1x, /src/assets/images/banner/mo-banner@2x.webp 2x" />
+        <!-- 모바일용 JPG -->
+        <img src="/src/assets/images/banner/mo-banner.jpg" srcset="/src/assets/images/banner/mo-banner.jpg 1x, /src/assets/images/banner/mo-banner@2x.jpg 2x" alt="올여름 필수 아이템, 크록스 지금 거래하기" />
+      </picture>
+    </a>
+  </body>
+</html>
