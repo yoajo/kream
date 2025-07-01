@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>carousel-component</title>
+    <link rel="icon" href="/vite.svg" />
+    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <section>
+      <!-- 이전 버튼 -->
+      <button type="button" aria-label="이전 탐색">
+        <svg width="24" height="41" viewBox="0 0 24 41">
+          <path d="M23.54 4.37179L20 0.831787L0 20.8318L20 40.8318L23.54 37.2918L7.08 20.8318L23.54 4.37179Z" fill="red" />
+        </svg>
+      </button>
+      <!-- 콘텐츠 -->
+      <div>
+        <ul>
+          <!-- 콘텐츠 1 -->
+          <li>
+            <a href="/" class="w-full block bg-[#2571CE]">
+              <picture class="max-w-[1680px]">
+                <!-- PC용 AVIF -->
+                <source type="image/avif" srcset="/src/assets/images/carousel/pc-content1.avif 1x, /src/assets/images/carousel/pc-content1@2x.avif 2x" media="(min-width: 768px)" />
+                <!-- PC용 Webp -->
+                <source type="image/webp" srcset="/src/assets/images/carousel/pc-content1.webp 1x, /src/assets/images/carousel/pc-content1@2x.webp 2x" media="(min-width: 768px)" />
+                <!-- PC용 JPG -->
+                <source type="image/jpeg" srcset="/src/assets/images/carousel/pc-content1.jpg 1x, /src/assets/images/carousel/pc-content1@2x.jpg 2x" media="(min-width: 768px)" />
+                <!-- 모바일용 AVIF -->
+                <source type="image/avif" srcset="/src/assets/images/carousel/mo-content1.avif 1x, /src/assets/images/carousel/mo-content1@2x.avif 2x" />
+                <!-- 모바일용 Webp -->
+                <source type="image/webp" srcset="/src/assets/images/carousel/mo-content1.webp 1x, /src/assets/images/carousel/mo-content1@2x.webp 2x" />
+                <!-- 모바일용 JPG -->
+                <img class="w-full max-h-[424px] mx-auto object-contain" width="1120" height="1015" src="/src/assets/images/carousel/mo-content1.jpg" srcset="/src/assets/images/carousel/mo-content1.jpg 1x, /src/assets/images/carousel/mo-content1@2x.jpg 2x" alt="매일 오전 11시에 오픈하는 스투시 반팔 99% 랜덤 쿠폰 받으러 가기" />
+              </picture>
+            </a>
+          </li>
+          <!-- 콘텐츠 2 -->
+          <li>
+            <a href="/" class="w-full block bg-[#8F9F73]">
+              <picture class="max-w-[1680px]">
+                <!-- PC용 AVIF -->
+                <source type="image/avif" srcset="/src/assets/images/carousel/pc-content2.avif 1x, /src/assets/images/carousel/pc-content2@2x.avif 2x" media="(min-width: 768px)" />
+                <!-- PC용 Webp -->
+                <source type="image/webp" srcset="/src/assets/images/carousel/pc-content2.webp 1x, /src/assets/images/carousel/pc-content2@2x.webp 2x" media="(min-width: 768px)" />
+                <!-- PC용 JPG -->
+                <source type="image/jpeg" srcset="/src/assets/images/carousel/pc-content2.jpg 1x, /src/assets/images/carousel/pc-content2@2x.jpg 2x" media="(min-width: 768px)" />
+                <!-- 모바일용 AVIF -->
+                <source type="image/avif" srcset="/src/assets/images/carousel/mo-content2.avif 1x, /src/assets/images/carousel/mo-content2@2x.avif 2x" />
+                <!-- 모바일용 Webp -->
+                <source type="image/webp" srcset="/src/assets/images/carousel/mo-content2.webp 1x, /src/assets/images/carousel/mo-content2@2x.webp 2x" />
+                <!-- 모바일용 JPG -->
+                <img class="w-full max-h-[424px] mx-auto object-contain" width="1120" height="1015" src="/src/assets/images/carousel/mo-content2.jpg" srcset="/src/assets/images/carousel/mo-content2.jpg 1x, /src/assets/images/carousel/mo-content2@2x.jpg 2x" alt="지난주 가장 많이 거래된 티셔츠 TOP 100 지금 거래하기" />
+              </picture>
+            </a>
+          </li>
+          <!-- 콘텐츠 3 -->
+          <li>
+            <a href="/" class="w-full block bg-[#5C8D93]">
+              <picture class="max-w-[1680px]">
+                <!-- PC용 AVIF -->
+                <source type="image/avif" srcset="/src/assets/images/carousel/pc-content3.avif 1x, /src/assets/images/carousel/pc-content3@2x.avif 2x" media="(min-width: 768px)" />
+                <!-- PC용 Webp -->
+                <source type="image/webp" srcset="/src/assets/images/carousel/pc-content3.webp 1x, /src/assets/images/carousel/pc-content3@2x.webp 2x" media="(min-width: 768px)" />
+                <!-- PC용 JPG -->
+                <source type="image/jpeg" srcset="/src/assets/images/carousel/pc-content3.jpg 1x, /src/assets/images/carousel/pc-content3@2x.jpg 2x" media="(min-width: 768px)" />
+                <!-- 모바일용 AVIF -->
+                <source type="image/avif" srcset="/src/assets/images/carousel/mo-content3.avif 1x, /src/assets/images/carousel/mo-content3@2x.avif 2x" />
+                <!-- 모바일용 Webp -->
+                <source type="image/webp" srcset="/src/assets/images/carousel/mo-content3.webp 1x, /src/assets/images/carousel/mo-content3@2x.webp 2x" />
+                <!-- 모바일용 JPG -->
+                <img class="w-full max-h-[424px] mx-auto object-contain" width="1120" height="1015" src="/src/assets/images/carousel/mo-content3.jpg" srcset="/src/assets/images/carousel/mo-content3.jpg 1x, /src/assets/images/carousel/mo-content3@2x.jpg 2x" alt="Henrry's Pizza와 아이앱의 오사카 첫 팝업 상품 지금 거래하기" />
+              </picture>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- 다음 버튼 -->
+      <button type="button" aria-label="다음 탐색">
+        <svg width="24" height="41" viewBox="0 0 24 41">
+          <path d="M0.459961 37.2918L3.99996 40.8318L24 20.8318L3.99996 0.831787L0.459961 4.37179L16.92 20.8318L0.459961 37.2918Z" fill="red" />
+        </svg>
+      </button>
+      <!-- 인디케이터 -->
+      <div>
+        <button type="button" aria-label="첫 번째 콘텐츠"></button>
+        <button type="button" aria-label="두 번째 콘텐츠"></button>
+        <button type="button" aria-label="세 번째 콘텐츠"></button>
+      </div>
+    </section>
+  </body>
+</html>
