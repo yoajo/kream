@@ -6,24 +6,19 @@
     <title>carousel-component</title>
     <link rel="icon" href="/vite.svg" />
     <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
-    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="/font/pretendardvariable.css" />
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
-    <section>
-      <!-- 이전 버튼 -->
-      <button type="button" aria-label="이전 탐색">
-        <svg width="24" height="41" viewBox="0 0 24 41">
-          <path d="M23.54 4.37179L20 0.831787L0 20.8318L20 40.8318L23.54 37.2918L7.08 20.8318L23.54 4.37179Z" fill="red" />
-        </svg>
-      </button>
+    <section class="relative">
+      <h2 class="sr-only">kream 상품 보러가기</h2>
       <!-- 콘텐츠 -->
-      <div>
-        <ul>
+      <div class="overflow-hidden">
+        <ul class="flex flex-nowrap flex-row">
           <!-- 콘텐츠 1 -->
-          <li>
-            <a href="/" class="w-full block bg-[#2571CE]">
-              <picture class="max-w-[1680px]">
+          <li class="flex-shrink-0 w-full">
+            <a href="/" class="w-full block bg-[#2571CE] focus-visible:border-2 focus-visible:border-(--sub-point-color)">
+              <picture>
                 <!-- PC용 AVIF -->
                 <source type="image/avif" srcset="/src/assets/images/carousel/pc-content1.avif 1x, /src/assets/images/carousel/pc-content1@2x.avif 2x" media="(min-width: 768px)" />
                 <!-- PC용 Webp -->
@@ -35,14 +30,14 @@
                 <!-- 모바일용 Webp -->
                 <source type="image/webp" srcset="/src/assets/images/carousel/mo-content1.webp 1x, /src/assets/images/carousel/mo-content1@2x.webp 2x" />
                 <!-- 모바일용 JPG -->
-                <img class="w-full max-h-[424px] mx-auto object-contain" width="1120" height="1015" src="/src/assets/images/carousel/mo-content1.jpg" srcset="/src/assets/images/carousel/mo-content1.jpg 1x, /src/assets/images/carousel/mo-content1@2x.jpg 2x" alt="매일 오전 11시에 오픈하는 스투시 반팔 99% 랜덤 쿠폰 받으러 가기" />
+                <img class="w-full max-h-[424px] mx-auto object-contain" src="/src/assets/images/carousel/mo-content1.jpg" srcset="/src/assets/images/carousel/mo-content1.jpg 1x, /src/assets/images/carousel/mo-content1@2x.jpg 2x" alt="매일 오전 11시에 오픈하는 스투시 반팔 99% 랜덤 쿠폰 받으러 가기" />
               </picture>
             </a>
           </li>
           <!-- 콘텐츠 2 -->
-          <li>
-            <a href="/" class="w-full block bg-[#8F9F73]">
-              <picture class="max-w-[1680px]">
+          <li class="flex-shrink-0 w-full index">
+            <a tabindex="-1" href="/" class="w-full block bg-[#8F9F73] focus-visible:border-2 focus-visible:border-(--sub-point-color)">
+              <picture>
                 <!-- PC용 AVIF -->
                 <source type="image/avif" srcset="/src/assets/images/carousel/pc-content2.avif 1x, /src/assets/images/carousel/pc-content2@2x.avif 2x" media="(min-width: 768px)" />
                 <!-- PC용 Webp -->
@@ -59,9 +54,9 @@
             </a>
           </li>
           <!-- 콘텐츠 3 -->
-          <li>
-            <a href="/" class="w-full block bg-[#5C8D93]">
-              <picture class="max-w-[1680px]">
+          <li class="flex-shrink-0 w-full">
+            <a tabindex="-1" href="/" class="w-full block bg-[#5C8D93] focus-visible:border-2 focus-visible:border-(--sub-point-color)">
+              <picture>
                 <!-- PC용 AVIF -->
                 <source type="image/avif" srcset="/src/assets/images/carousel/pc-content3.avif 1x, /src/assets/images/carousel/pc-content3@2x.avif 2x" media="(min-width: 768px)" />
                 <!-- PC용 Webp -->
@@ -79,17 +74,23 @@
           </li>
         </ul>
       </div>
-      <!-- 다음 버튼 -->
-      <button type="button" aria-label="다음 탐색">
+      <!-- 이전 버튼 -->
+      <button class="absolute top-1/2 left-12 -translate-y-1/2 cursor-pointer" type="button" aria-label="이전 탐색">
         <svg width="24" height="41" viewBox="0 0 24 41">
-          <path d="M0.459961 37.2918L3.99996 40.8318L24 20.8318L3.99996 0.831787L0.459961 4.37179L16.92 20.8318L0.459961 37.2918Z" fill="red" />
+          <path d="M23.54 4.37179L20 0.831787L0 20.8318L20 40.8318L23.54 37.2918L7.08 20.8318L23.54 4.37179Z" fill="white" />
+        </svg>
+      </button>
+      <!-- 다음 버튼 -->
+      <button class="absolute top-1/2 right-12 -translate-y-1/2 cursor-pointer" type="button" aria-label="다음 탐색">
+        <svg width="24" height="41" viewBox="0 0 24 41">
+          <path d="M0.459961 37.2918L3.99996 40.8318L24 20.8318L3.99996 0.831787L0.459961 4.37179L16.92 20.8318L0.459961 37.2918Z" fill="white" />
         </svg>
       </button>
       <!-- 인디케이터 -->
-      <div>
-        <button type="button" aria-label="첫 번째 콘텐츠"></button>
-        <button type="button" aria-label="두 번째 콘텐츠"></button>
-        <button type="button" aria-label="세 번째 콘텐츠"></button>
+      <div class="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-5">
+        <button class="w-4 h-4 rounded-full bg-(--line-color) cursor-pointer" type="button" aria-label="첫 번째 콘텐츠"></button>
+        <button class="w-4 h-4 rounded-full bg-(--line-color) cursor-pointer" type="button" aria-label="두 번째 콘텐츠"></button>
+        <button class="w-4 h-4 rounded-full bg-(--line-color) cursor-pointer" type="button" aria-label="세 번째 콘텐츠"></button>
       </div>
     </section>
   </body>
