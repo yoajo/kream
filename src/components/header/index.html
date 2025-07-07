@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="KREAM-국내외 인기 스니커즈, 한정판 제품을 거래 할 수 있는 마켓플레이스" />
+    <title>타이틀</title>
+    <link rel="icon" href="/vite.svg" />
+    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/font/pretendardvariable.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <!-- 마크업 시작 -->
+    <!-- 헤더 -->
+    <header class="flex flex-col gap-5 px-6 mx-auto :px-6 md:max-w-screen-xl md:px-0">
+      <nav aria-label="상단 고객 메뉴">
+        <ul class="flex-row gap-5 justify-end mt-5 text-xs hidden md:flex">
+          <li><a href="">고객센터</a></li>
+          <li><a href="">마이페이지</a></li>
+          <li><a href="">관심</a></li>
+          <li><a href="">알림</a></li>
+          <li><a href="">로그인</a></li>
+        </ul>
+      </nav>
+
+      <div class="flex flex-row justify-between">
+        <h1 class="pt-1">
+          <a href="#">
+            <span class="sr-only">KREAM</span>
+            <svg width="134" height="22" viewBox="0 0 134 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M107.536 0L101.235 21.4232H107.956L111.737 9.45141L113.627 18.0627H117.408L124.339 9.45141L120.978 21.2132H127.699L134 0H126.649L118.458 9.87147H117.408L115.097 0H107.536Z" fill="#303033" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M73.9312 21.2132L74.7713 18.0627L88.0033 0.210083H96.8246L99.3449 18.0627L98.2948 21.2132H92.2039L91.9938 18.0627H82.9625L80.8622 21.2132H73.9312ZM86.7431 12.6019H91.5738L91.1537 6.09096L86.7431 12.6019Z" fill="#303033" />
+              <path d="M51.4575 21.2132L57.7585 0.210083H77.5014L76.4513 3.78062L73.9309 5.6709H62.7992L62.1691 7.77121H75.1911L73.5108 13.4421H60.4889L59.8588 15.5424H72.8807L70.9904 21.2132H51.4575Z" fill="#303033" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M31.7149 0L25.624 21.4232H32.345L34.6554 13.652H37.8058L42.2165 21.4232H47.6773L48.9375 18.0627L45.9971 13.652C47.3273 13.722 50.1977 13.0639 51.0378 9.87147L52.298 5.25078C52.578 3.50052 52.466 0 49.7776 0H31.7149ZM36.9657 5.67085L36.1256 8.40125H44.5268L45.367 5.67085H36.9657Z" fill="#303033" />
+              <path d="M0 21.4232L6.51097 0H13.232L10.9216 7.56113H15.5423L22.4734 0H28.9843L28.1442 3.15047L21.0031 10.2915L23.5235 18.0627L22.4734 21.4232H17.0125L14.7022 13.442H9.03135L6.93103 21.4232H0Z" fill="#303033" />
+            </svg>
+          </a>
+        </h1>
+        <nav class="flex gap-3 md:gap-7 text-xl" aria-label="메인 메뉴">
+          <a href="#" class="hidden md:block font-bold">HOME</a>
+          <a href="#" class="hidden md:block"> STYLE </a>
+          <a href="#" class="hidden md:block">SHOP</a>
+          <button type="button" class="header__button hidden md:block pt-1" aria-label="검색">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5708 14.631C11.9346 15.9944 9.83584 16.6744 7.71105 16.5296C5.58626 16.3849 3.59909 15.4265 2.16297 13.8538C0.726856 12.2811 -0.0476237 10.2153 0.000664792 8.08616C0.0489532 5.95699 0.916291 3.92841 2.42223 2.42247C3.92817 0.916535 5.95674 0.0491974 8.08591 0.000908933C10.2151 -0.0473795 12.2809 0.7271 13.8536 2.16322C15.4262 3.59933 16.3846 5.5865 16.5294 7.71129C16.6742 9.83609 15.9941 11.9349 14.6308 13.571L19.1308 18.069L18.0698 19.129L13.5708 14.631ZM15.0488 8.27404C15.0488 10.0709 14.335 11.7941 13.0644 13.0647C11.7939 14.3352 10.0706 15.049 8.27379 15.049C6.47695 15.049 4.7537 14.3352 3.48314 13.0647C2.21259 11.7941 1.49879 10.0709 1.49879 8.27404C1.49879 6.4772 2.21259 4.75395 3.48314 3.48339C4.7537 2.21283 6.47695 1.49904 8.27379 1.49904C10.0706 1.49904 11.7939 2.21283 13.0644 3.48339C14.335 4.75395 15.0488 6.4772 15.0488 8.27404Z" fill="#222222" />
+            </svg>
+          </button>
+          <button class="header__button md:hidden pt-1" aria-label="알림">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_2008_1954)">
+                <path d="M12 22C13.1 22 14 21.1 14 20H10C10 21.1 10.9 22 12 22ZM18 16V11C18 7.93 16.37 5.36 13.5 4.68V4C13.5 3.17 12.83 2.5 12 2.5C11.17 2.5 10.5 3.17 10.5 4V4.68C7.64 5.36 6 7.92 6 11V16L4 18V19H20V18L18 16ZM16 17H8V11C8 8.52 9.51 6.5 12 6.5C14.49 6.5 16 8.52 16 11V17Z" fill="black" />
+              </g>
+              <defs>
+                <clipPath id="clip0_2008_1954">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+          <a href="#" class="pt-1" aria-label="장바구니로 이동">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1918 5.20004H19.4588C19.7133 5.20006 19.9582 5.29709 20.1436 5.47137C20.329 5.64565 20.441 5.88406 20.4568 6.13804L21.3728 20.975C21.3762 21.0296 21.3684 21.0842 21.3499 21.1356C21.3314 21.187 21.3026 21.234 21.2652 21.2738C21.2278 21.3136 21.1827 21.3454 21.1326 21.3671C21.0825 21.3888 21.0284 21.4 20.9738 21.4H3.02481C2.97011 21.4002 2.91596 21.389 2.86573 21.3674C2.81549 21.3457 2.77023 21.314 2.73274 21.2742C2.69525 21.2344 2.66633 21.1873 2.64777 21.1358C2.6292 21.0844 2.62139 21.0296 2.62481 20.975L3.54181 6.13804C3.55758 5.88406 3.66959 5.64565 3.85502 5.47137C4.04044 5.29709 4.28533 5.20006 4.53981 5.20004H7.80681C7.97306 4.20829 8.4855 3.30759 9.25309 2.65796C10.0207 2.00834 10.9937 1.65186 11.9993 1.65186C13.0049 1.65186 13.9779 2.00834 14.7455 2.65796C15.5131 3.30759 16.0256 4.20829 16.1918 5.20004ZM7.74981 6.70004H5.00981L4.19481 19.9H19.8048L18.9888 6.70004H16.2488V9.40004H14.7488V6.70004H9.24881V9.40004H7.74881L7.74981 6.70004ZM9.33981 5.20004H14.6598C14.5049 4.61272 14.1599 4.09319 13.6787 3.72249C13.1976 3.35179 12.6072 3.15076 11.9998 3.15076C11.3924 3.15076 10.8021 3.35179 10.3209 3.72249C9.8397 4.09319 9.49474 4.61272 9.33981 5.20004Z" fill="#222222" />
+            </svg>
+          </a>
+          <button type="button" class="header__button" aria-label="카테고리">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 6H21V7.8H3V6ZM3 11.49H21V13.29H3V11.49ZM21 16.985H3V18.785H21V16.985Z" fill="#222222" />
+            </svg>
+          </button>
+        </nav>
+      </div>
+
+      <nav class="header__tabs" aria-label="탭 메뉴">
+        <ul class="flex flex-row gap-7 text-xs min-[410px]:text-xl">
+          <li class="relative">
+            <button class="header__tab_button pb-1 font-bold border-b-3"><span class=""></span>추천</button>
+          </li>
+          <li class="relative">
+            <button class="header__tab_button pb-1"><span class="has-new"></span>랭킹</button>
+          </li>
+          <li class="relative">
+            <button class="header__tab_button pb-1"><span class="has-new"></span>럭셔리</button>
+          </li>
+          <li class="relative">
+            <button class="header__tab_button pb-1"><span class="has-new"></span>남성</button>
+          </li>
+          <li class="relative">
+            <button class="header__tab_button pb-1"><span></span>여성</button>
+          </li>
+          <li class="relative">
+            <button class="header__tab_button pb-1"><span></span>발견</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

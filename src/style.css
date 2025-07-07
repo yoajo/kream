@@ -11,6 +11,15 @@
 @theme {
   --base-color: #303033;
   --point-color: #b02c20;
+  --sub-point-color: #58dc76;
+  --product-bg-color: #f5f5f5;
+  --line-color: #cbcbcb;
+  --sub-base-color: #222222;
+  --light-sub-base-color: #22222280;
+}
+
+.has-new {
+  @apply w-2 h-2 rounded-full bg-(--point-color) block absolute bottom-5 right-0 min-[410px]:bottom-8 min-[410px]:-right-2;
   --sub-point-color: #008a1f;
   --product-bg-color: #f5f5f5;
   --line-color: #cbcbcb;
