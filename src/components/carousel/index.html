@@ -8,6 +8,7 @@
     <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
     <link rel="stylesheet" href="/font/pretendardvariable.css" />
     <script type="module" src="/src/main.js"></script>
+    <script defer src="carousel.js"></script>
   </head>
   <body>
     <section class="relative">
@@ -35,7 +36,7 @@
             </a>
           </li>
           <!-- 콘텐츠 2 -->
-          <li class="flex-shrink-0 w-full">
+          <li class="w-full">
             <a tabindex="-1" href="/" class="w-full block bg-[#8F9F73]">
               <picture>
                 <!-- PC용 AVIF -->
@@ -54,7 +55,7 @@
             </a>
           </li>
           <!-- 콘텐츠 3 -->
-          <li class="flex-shrink-0 w-full">
+          <li class="w-full">
             <a tabindex="-1" href="/" class="w-full block bg-[#5C8D93]">
               <picture>
                 <!-- PC용 AVIF -->
@@ -88,7 +89,7 @@
       </button>
       <!-- 인디케이터 -->
       <div class="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-5">
-        <button class="w-4 h-4 rounded-full bg-(--line-color) cursor-pointer" type="button" aria-label="첫 번째 콘텐츠"></button>
+        <button class="w-4 h-4 rounded-full bg-(--base-color) cursor-pointer" type="button" aria-label="첫 번째 콘텐츠" aria-current="true"></button>
         <button class="w-4 h-4 rounded-full bg-(--line-color) cursor-pointer" type="button" aria-label="두 번째 콘텐츠"></button>
         <button class="w-4 h-4 rounded-full bg-(--line-color) cursor-pointer" type="button" aria-label="세 번째 콘텐츠"></button>
       </div>
