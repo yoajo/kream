@@ -8,16 +8,33 @@
     <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
     <link rel="stylesheet" href="/font/pretendardvariable.css" />
     <script type="module" src="/src/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script defer src="/src/components/carousel/carousel.js"></script>
+    <style>
+      #carouselContainer{
+        .carousel__contents{
+          --content-width: 100%;
+        }
+
+        .carousel__indicators{
+          button{
+            &.active{
+              @apply bg-(--base-color)
+            }
+          }
+        }
+      }
+    </style>
   </head>
   <body>
-    <section class="relative">
+    <section id="carouselContainer" class="relative">
       <h2 class="sr-only">kream 상품 보러가기</h2>
       <!-- 콘텐츠 컨테이너 -->
       <div class="overflow-hidden focus-within:outline-2 focus-within: -outline-offset-1 focus-within:outline-(--sub-point-color)">
-        <ul class="flex flex-nowrap flex-row">
+        <ul class="carousel__contents flex flex-nowrap flex-row transition-[translate] duration-300">
           <!-- 콘텐츠 1 -->
-          <li class="flex-shrink-0 w-full ">
-            <a href="/" class="w-full block bg-[#2571CE]">
+          <li class="active w-(--content-width) flex-shrink-0">
+            <a href="#" class="w-full block bg-[#2571CE]">
               <picture>
                 <!-- PC용 AVIF -->
                 <source type="image/avif" srcset="/src/assets/images/carousel/pc-content1.avif 1x, /src/assets/images/carousel/pc-content1@2x.avif 2x" media="(min-width: 768px)" />
@@ -35,8 +52,8 @@
             </a>
           </li>
           <!-- 콘텐츠 2 -->
-          <li class="flex-shrink-0 w-full">
-            <a tabindex="-1" href="/" class="w-full block bg-[#8F9F73]">
+          <li class="w-(--content-width) flex-shrink-0">
+            <a tabindex="-1" href="#" class="w-full block bg-[#8F9F73]">
               <picture>
                 <!-- PC용 AVIF -->
                 <source type="image/avif" srcset="/src/assets/images/carousel/pc-content2.avif 1x, /src/assets/images/carousel/pc-content2@2x.avif 2x" media="(min-width: 768px)" />
@@ -54,8 +71,8 @@
             </a>
           </li>
           <!-- 콘텐츠 3 -->
-          <li class="flex-shrink-0 w-full">
-            <a tabindex="-1" href="/" class="w-full block bg-[#5C8D93]">
+          <li class="w-(--content-width) flex-shrink-0">
+            <a tabindex="-1" href="#" class="w-full block bg-[#5C8D93]">
               <picture>
                 <!-- PC용 AVIF -->
                 <source type="image/avif" srcset="/src/assets/images/carousel/pc-content3.avif 1x, /src/assets/images/carousel/pc-content3@2x.avif 2x" media="(min-width: 768px)" />
@@ -87,8 +104,8 @@
         </svg>
       </button>
       <!-- 인디케이터 -->
-      <div class="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-5">
-        <button class="w-4 h-4 rounded-full bg-(--line-color) cursor-pointer" type="button" aria-label="첫 번째 콘텐츠"></button>
+      <div class="carousel__indicators absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-5">
+        <button class="active w-4 h-4 rounded-full bg-(--line-color) cursor-pointer" type="button" aria-label="첫 번째 콘텐츠" aria-current="true"></button>
         <button class="w-4 h-4 rounded-full bg-(--line-color) cursor-pointer" type="button" aria-label="두 번째 콘텐츠"></button>
         <button class="w-4 h-4 rounded-full bg-(--line-color) cursor-pointer" type="button" aria-label="세 번째 콘텐츠"></button>
       </div>
