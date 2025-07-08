@@ -45,6 +45,7 @@ carouselContainer.addEventListener('click', ({target}) => {
     // 그 후 activeIndex 값을 찾아 재할당
     activeIndex = dotts.findIndex((item) => item.classList.contains(ACTIVE_CLASS))
 
+    moveActiveClass(contents, activeContent)
     setDottsAriaCurrent()
     setContentsTabindex()
     setContentsWrapTranslate()
